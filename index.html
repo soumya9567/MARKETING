@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPIC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="bg-black">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button -->
+          <button type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!-- Icon when menu is closed -->
+            <svg class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!-- Icon when menu is open -->
+            <svg class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <h1
+              class="text-2xl rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+              SHOPIC</h1>
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Navigation Links -->
+              <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                aria-current="page">Dashboard</a>
+              <a href="#"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
+              <a href="#"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">New
+                Arrival</a>
+              <a href="#"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Fashion</a>
+
+              <div class="relative">
+                <input type="text"
+                  class="border-b border-grey bg-black text-gray-300 pl-10 pr-3 py-2 focus:outline-none focus:ring-0 placeholder-grey"
+                  placeholder="Search...">
+
+                <svg class="absolute top-3 left-3 w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM21 21l-5.2-5.2" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <!-- Notification Button -->
+          <button type="button"
+            class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <span class="sr-only">View notifications</span>
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+            </svg>
+          </button>
+
+
+          <div class="relative ml-4">
+            <button type="button"
+              class="relative inline-flex items-center justify-center rounded-full bg-gray-800 p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <span class="sr-only">View cart</span>
+
+              <i class="fas fa-shopping-cart text-gray-400 hover:text-white w-6 h-6"></i>
+
+              <span
+                class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">5</span>
+              <!-- Cart Item Count -->
+            </button>
+          </div>
+
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+          <!-- Profile Dropdown -->
+          <div class="relative ml-3">
+            <button type="button"
+              class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <span class="sr-only">Open user menu</span>
+              <img class="w-8 h-8 rounded-full"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt="Profile">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Mobile Navigation Links -->
+        <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+          aria-current="page">Women</a>
+        <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+          aria-current="page">Men</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">New
+          Arrival</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Fashion</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- --------------------------------header-------------------------------- -->
+
+
+
+
+
+
+  <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-60">
+    <video autoplay muted loop class="absolute inset-0 -z-10 w-full h-full object-cover object-right md:object-center">
+      <source src="./videos/zlUSNqK8RRFMCbEOXTPvEgAa_9.mp4" type="video/mp4">
+
+    </video>
+
+    <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+      aria-hidden="true">
+      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 60.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+    <div
+      class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+      aria-hidden="true">
+      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 60.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)">
+      </div>
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">Shop with us</h2>
+        <p class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">SHOPIC offers complementary wrapping
+          on all orders, carefully packaged in the Maison's iconic boxes.</p>
+      </div>
+      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div
+          class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+          <a href="#">DRESS <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">PERFUME <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">WOMEN BAGS<span aria-hidden="true">&rarr;</span></a>
+          <a href="#">MEN WALLET<span aria-hidden="true"></span></a>
+        </div>
+        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">All brand</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">WOMEN</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">All fashion</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">MEN</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">All color</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">BOYS</dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">All size</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">GIRLS</dd>
+          </div>
+        </dl>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!--------------------------------------------------- grid-------------------------------------------------- -->
+
+  <div class="grid grid-rows-2 bg-blue-800 grid-flow-col gap-4 rounded-md  ">
+    <div class="h-64 w-60 bg-gray-500 justify-center  mt-20"><img src="./images/model1.jpeg" alt=""></div>
+    <div class="h-64 w-60 bg-gray-500 justify-center mt-20"><img src="./images/model23.png" alt=""></div>
+    <div class="h-64 w-60 bg-gray-500 justify-center  "><img src="./images/model3.jpeg" alt=""></div>
+    <div class="h-64 w-60 bg-gray-500 justify-center "><img src="./images/model2.jpg" alt=""></div>
+    <div class="h-64 w-60 bg-gray-500 justify-center mt-20"><img src="./images/perfume.png" alt=""></div>
+    <div class="h-64 w-60 bg-gray-500 justify-center mt-20"><img src="./images/bagging.png" alt=""></div>
+    <div class="h-64 w-60 bg-gray-500 justify-center"><img src="./images/bags.png" alt=""></div>
+    <div class="h-64 w-60 bg-gray-500 justify-center"><img src="./images/bagging.png" alt=""></div>
+  </div>
+
+
+
+  <!-- <script src="tailwind.js"></script> -->
+</body>
+
+</html>
