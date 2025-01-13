@@ -10,3 +10,58 @@
     transition: 0.2s ease-in-out;
   
 }
+#mainbtn{
+    background-color: #120442;
+    color: white;
+}
+
+#subbtn{
+    background-color: #3a44d7 ;
+    color: white;
+}
+.stockelement{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    border: 1px solid grey;
+    width: 90px;
+    border-radius: 5px;
+    margin-left: 5px;
+
+}
+
+#btn{
+    background-color: transparent;
+    color: grey;
+    /* font-size: 2rem; */
+    /* padding: 0.6rem; */
+    font-weight: bold;
+    border: none;
+}
+
+#subbtn:hover{
+    border-radius: 0px;
+}
+
+#login{
+    width: 400px;
+    height: 450px;
+}
+
+#login{
+    background-color: orange;
+    margin-left: 400px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
+}
+
+#login input{
+    background-color: orange;
+}
+
+#login button{
+    color: orange;
+}
+#btnlogin :hover{
+    border-radius: 1px;
+    background-color: aqua;
+}

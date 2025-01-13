@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SHOPIC</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="bg-black" id="nav">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button -->
+          <button type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!-- Icon when menu is closed -->
+            <svg class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!-- Icon when menu is open -->
+            <svg class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <h1
+              class="text-2xl rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">
+              SHOPIC</h1>
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Navigation Links -->
+              <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
+                aria-current="page">Dashboard</a>
+              <a href="#"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
+              <a href="#"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">New
+                Arrival</a>
+              <a href="#"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Fashion</a>
+
+              <div class="relative">
+                <input type="text"
+                  class="border-b border-grey bg-black text-gray-300 pl-10 pr-3 py-2 focus:outline-none focus:ring-0 placeholder-grey"
+                  placeholder="Search...">
+
+                <svg class="absolute top-3 left-3 w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
+                  stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM21 21l-5.2-5.2" />
+                </svg>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <!-- Notification Button -->
+          <button type="button"
+            class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <span class="sr-only">View notifications</span>
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+            </svg>
+          </button>
+
+
+            <div class="relative ml-4">
+              <button type="button"
+                class="relative inline-flex items-center justify-center rounded-full bg-gray-800 p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <span class="sr-only">View cart</span>
+            
+                <i class="fas fa-shopping-cart text-gray-400 hover:text-white w-6 h-6"></i>
+                <span
+                  id="cart-count"
+                  class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 bg-red-600 rounded-full">0</span>
+                <!-- Cart Item Count -->
+              </button>
+            </div>
+          
+
+
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+          <!-- Profile Dropdown -->
+          <div class="relative ml-3">
+            <button type="button"
+              class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+              id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+              <span class="sr-only">Open user menu</span>
+              <img class="w-8 h-8 rounded-full"
+                src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                alt="Profile">
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Mobile Navigation Links -->
+        <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+          aria-current="page">Women</a>
+        <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+          aria-current="page">Men</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">New
+          Arrival</a>
+        <a href="#"
+          class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Fashion</a>
+      </div>
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- --------------------------------header-------------------------------- -->
+
+
+
+
+
+
+
+
+
+  <!--------------------------------------------------- grid-------------------------------------------------- -->
+
+  <div class="flex justify-center items-center min-h-screen ">
+
+    <div class="grid grid-rows-2 grid-flow-col gap-4 border-radius-10px" style="width: 1200px; height: 1000px;">
+      <!-- Product 1 -->
+      <div class="product-card h-64 w-60 bg-gray-500 justify-center mt-20 rounded-lg">
+        <a href="#"><img src="./images/model1.jpeg" class="object-cover w-full h-full rounded-t-lg" alt=""></a>
+        <div class="w-60 h-40 rounded-b-lg product-details" id="mainbtn">
+          <br>
+          <p class="ml-3">PRICE: <span class="price-display">2000</span></p>
+          <div class="flex">
+            <span class="ml-3">QUANTITY:</span>
+            <div class="stockelement">
+              <button class="increment-btn">+</button>
+              <p class="quantity-display">1</p>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="ml-10 border-grey w-40 h-12 rounded-full add-to-cart-btn" id="subbtn">ADD TO CART</button>
+        </div>
+      </div>
+    
+      <!-- Product 2 -->
+      <div class="product-card h-64 w-60 bg-gray-500 justify-center mt-20 rounded-lg">
+        <a href="#"><img src="./images/model23.png" class="object-cover w-full h-full rounded-t-lg" alt=""></a>
+        <div class="w-60 h-40 rounded-b-lg product-details" id="mainbtn">
+          <br>
+          <p class="ml-3">PRICE: <span class="price-display">45000</span></p>
+          <div class="flex">
+            <span class="ml-3">QUANTITY:</span>
+            <div class="stockelement">
+              <button class="increment-btn">+</button>
+              <p class="quantity-display">1</p>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="ml-10 border-grey w-40 h-12 rounded-full add-to-cart-btn" id="subbtn">ADD TO CART</button>
+        </div>
+      </div>
+    
+      <!-- Product 3 -->
+      <div class="product-card h-64 w-60 bg-gray-500 justify-center mt-20 rounded-lg">
+        <a href="#"><img src="./images/model3.jpeg" class="object-cover w-full h-full rounded-t-lg" alt=""></a>
+        <div class="w-60 h-40 rounded-b-lg product-details" id="mainbtn">
+          <br>
+          <p class="ml-3">PRICE: <span class="price-display">7000</span></p>
+          <div class="flex">
+            <span class="ml-3">QUANTITY:</span>
+            <div class="stockelement">
+              <button class="increment-btn">+</button>
+              <p class="quantity-display">1</p>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="ml-10 border-grey w-40 h-12 rounded-full add-to-cart-btn" id="subbtn">ADD TO CART</button>
+        </div>
+      </div>
+    
+      <!-- Product 4 -->
+      <div class="product-card h-64 w-60 bg-gray-500 justify-center mt-20 rounded-lg">
+        <a href="#"><img src="./images/model2.jpg" class="object-cover w-full h-full rounded-t-lg" alt=""></a>
+        <div class="w-60 h-40 rounded-b-lg product-details" id="mainbtn">
+          <br>
+          <p class="ml-3">PRICE: <span class="price-display">8000</span></p>
+          <div class="flex">
+            <span class="ml-3">QUANTITY:</span>
+            <div class="stockelement">
+              <button class="increment-btn">+</button>
+              <p class="quantity-display">1</p>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="ml-10 border-grey w-40 h-12 rounded-full add-to-cart-btn" id="subbtn">ADD TO CART</button>
+        </div>
+      </div>
+    
+      <!-- Product 5 -->
+      <div class="product-card h-64 w-60 bg-gray-500 justify-center mt-20 rounded-lg">
+        <a href="#"><img src="./images/perfume.png" class="object-cover w-full h-full rounded-t-lg" alt=""></a>
+        <div class="w-60 h-40 rounded-b-lg product-details" id="mainbtn">
+          <br>
+          <p class="ml-3">PRICE: <span class="price-display">9000</span></p>
+          <div class="flex">
+            <span class="ml-3">QUANTITY:</span>
+            <div class="stockelement">
+              <button class="increment-btn">+</button>
+              <p class="quantity-display">1</p>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="ml-10 border-grey w-40 h-12 rounded-full add-to-cart-btn" id="subbtn">ADD TO CART</button>
+        </div>
+      </div>
+    
+      <!-- Product 6 -->
+      <div class="product-card h-64 w-60 bg-gray-500 justify-center mt-20 rounded-lg">
+        <a href="#"><img src="./images/trendmode.png" class="object-cover w-full h-full rounded-t-lg" alt=""></a>
+        <div class="w-60 h-40 rounded-b-lg product-details " id="mainbtn">
+          <br>
+          <p class="ml-3">PRICE: <span class="price-display">10000</span></p>
+          <div class="flex">
+            <span class="ml-3">QUANTITY:</span>
+            <div class="stockelement">
+              <button class="increment-btn">+</button>
+              <p class="quantity-display">1</p>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="ml-10 border-grey w-40 h-12 rounded-full add-to-cart-btn" id="subbtn">ADD TO CART</button>
+        </div>
+      </div>
+    
+      <!-- Product 7 -->
+      <div class="product-card h-64 w-60 bg-gray-500 justify-center mt-20 rounded-lg">
+        <a href="#"><img src="./images/bags.png" class="object-cover w-full h-full rounded-t-lg" alt=""></a>
+        <div class="w-60 h-40 rounded-b-lg product-details" id="mainbtn">
+          <br>
+          <p class="ml-3">PRICE: <span class="price-display">12000</span></p>
+          <div class="flex">
+            <span class="ml-3">QUANTITY:</span>
+            <div class="stockelement">
+              <button class="increment-btn">+</button>
+              <p class="quantity-display">1</p>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="ml-10 border-grey w-40 h-12 rounded-full add-to-cart-btn" id="subbtn">ADD TO CART</button>
+        </div>
+      </div>
+    
+      <!-- Product 8 -->
+      <div class="product-card h-64 w-60 bg-gray-500 justify-center mt-20 rounded-lg">
+        <a href="#"><img src="./images/bagging.png" class="object-cover w-full h-full rounded-t-lg" alt=""></a>
+        <div class="w-60 h-40 rounded-b-lg product-details" id="mainbtn">
+          <br>
+          <p class="ml-3">PRICE: <span class="price-display">13000</span></p>
+          <div class="flex">
+            <span class="ml-3">QUANTITY:</span>
+            <div class="stockelement">
+              <button class="increment-btn">+</button>
+              <p class="quantity-display">1</p>
+              <button class="decrement-btn">-</button>
+            </div>
+          </div>
+          <br>
+          <button type="button" class="ml-10 border-grey w-40 h-12 rounded-full add-to-cart-btn" id="subbtn">ADD TO CART</button>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <br><br><br><br>
+
+
+
+
+<script src="script.js"></script>
+
+  <!-- <script src="tailwind.js"></script> -->
+</body>
+
+</html>

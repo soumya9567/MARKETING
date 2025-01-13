@@ -12,9 +12,9 @@
 <body>
 
   <!-- NAV -->
-  <nav class="bg-black">
+  <nav class="bg-black" id="nav">
     <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-16 items-center justify-between">
+      <div class="relative flex h-16 items-center justify-between ">
         <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           <!-- Mobile menu button -->
           <button type="button"
@@ -44,9 +44,9 @@
               <!-- Navigation Links -->
               <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
                 aria-current="page">Dashboard</a>
-              <a href="#"
+              <a href="#main-products"
                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
-              <a href="#"
+              <a href="#new-arrival"
                 class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">New
                 Arrival</a>
               <a href="#"
@@ -57,11 +57,11 @@
                   class="border-b border-grey bg-black text-gray-300 pl-10 pr-3 py-2 focus:outline-none focus:ring-0 placeholder-grey"
                   placeholder="Search...">
 
-                <svg class="absolute top-3 left-3 w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
+                <!-- <svg class="absolute top-3 left-3 w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM21 21l-5.2-5.2" />
-                </svg>
+                     d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM21 21l-5.2-5.2" /> 
+                </svg> -->
               </div>
 
             </div>
@@ -99,7 +99,7 @@
 
           <!-- Profile Dropdown -->
           <div class="relative ml-3">
-            <button type="button"
+           <a href="login.html"> <button type="button"
               class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
               id="user-menu-button" aria-expanded="false" aria-haspopup="true">
               <span class="sr-only">Open user menu</span>
@@ -107,6 +107,7 @@
                 src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
                 alt="Profile">
             </button>
+          </a>
           </div>
         </div>
       </div>
@@ -202,20 +203,20 @@
 
   <!--------------------------------------------------- grid-------------------------------------------------- -->
 
-  <div class="flex justify-center items-center min-h-screen bg-blue-800">
-    
+  <div class="flex justify-center items-center min-h-screen " id="main-products">
+
     <div class="grid grid-rows-2 grid-flow-col  gap-4 border-radius-10px " style="width: 1200px; height: 1000px;">
       <div class="h-96 w-60 bg-gray-500 justify-center mt-20 rounded-lg" id="grid">
-       <a href="#"> <img src="./images/model1.jpeg" class="object-cover w-full h-full rounded-lg" alt=""></a>
+        <a href="#"> <img src="./images/model1.jpeg" class="object-cover w-full h-full rounded-lg" alt=""></a>
       </div>
       <div class="h-96 w-60 bg-gray-500 justify-center mt-20 rounded-lg" id="grid">
-       <a href="#"> <img src="./images/model23.png" class="object-cover w-full h-full rounded-lg" alt=""></a>
+        <a href="#"> <img src="./images/model23.png" class="object-cover w-full h-full rounded-lg" alt=""></a>
       </div>
-      <div class="h-96 w-60 bg-gray-500 justify-center rounded-lg mt-5"  id="grid">
+      <div class="h-96 w-60 bg-gray-500 justify-center rounded-lg mt-5" id="grid">
         <a href="#"><img src="./images/model3.jpeg" class="object-cover w-full h-full rounded-lg" alt=""></a>
       </div>
       <div class="h-96 w-60 bg-gray-500 justify-center rounded-lg " id="grid">
-      <a href="#">  <img src="./images/model2.jpg" class="object-cover w-full h-full rounded-lg" alt=""></a>
+        <a href="#"> <img src="./images/model2.jpg" class="object-cover w-full h-full rounded-lg" alt=""></a>
       </div>
       <div class="h-96 w-60 bg-gray-500 justify-center mt-20 rounded-lg" id="grid">
         <a href="#"><img src="./images/perfume.png" class="object-cover w-full h-full rounded-lg" alt=""></a>
@@ -223,7 +224,7 @@
       <div class="h-96 w-60 bg-gray-500 justify-center mt-20 rounded-lg" id="grid">
         <a href="#"><img src="./images/trendmode.png" class="object-cover w-full h-full rounded-lg" alt=""></a>
       </div>
-      <div class="h-96 w-60 bg-gray-500 justify-center rounded-lg mt-5"  id="grid">
+      <div class="h-96 w-60 bg-gray-500 justify-center rounded-lg mt-5" id="grid">
         <a href="#"><img src="./images/bags.png" class="object-cover w-full h-full rounded-lg" alt=""></a>
       </div>
       <div class="h-96 w-60 bg-gray-500 justify-center rounded-lg" id="grid">
@@ -231,8 +232,22 @@
       </div>
     </div>
   </div>
-  
 
+
+  <div class="flex justify-center items-center min-h-screen  bg-gray-900" id="new-arrival">
+    <div class="absolute -top-30 -mt-5">
+<h1 class=" text-red-100 text-center text-7xl "> <a href="./unskip.html"><u>UNSKIPPABLE</u></a> </h1>
+      <span class="text-gray-400 text-center ml-16"><i>click here to move the unskippable collections</i></span>
+    </div>
+
+    <!-- <div class="h-96 w-60 justify-center  rounded-lg">
+      <img src="./images/bagging.png" class="object-cover w-full" alt="">
+    </div> -->
+
+
+  </div>
+
+<script src="script.js"></script>
 
   <!-- <script src="tailwind.js"></script> -->
 </body>
