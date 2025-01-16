@@ -47,21 +47,56 @@
     width: 400px;
     height: 450px;
 }
+#sho{
+    font-size:xx-large ;
+}
+
+#pic{
+   color: red; 
+   font-size: xx-large;
+}
 
 #login{
-    background-color: orange;
+    background-color: rgb(27, 26, 26);
     margin-left: 400px;
     box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.3);
 }
 
+#login-main{
+    border-bottom: none;
+}
+
 #login input{
-    background-color: orange;
+    background-color:rgb(27, 26, 26) ;
+    border-bottom: 2px solid white;
 }
 
 #login button{
-    color: orange;
+
+    background-color: #040a63;
 }
 #btnlogin :hover{
     border-radius: 1px;
-    background-color: aqua;
+    background-color: rgb(255, 149, 0);
+}
+#login button:hover{
+ background-color: orange;
+ border-radius: 1px;
+}
+
+#checkout{
+    width: 120px;
+    height: 60px;
+    background-color: green;
+     color: white;
+     font-size:medium;
+     font-weight: 400;
+     text-align: center;
+    margin-left: 50%;
+    border-radius: 20px;
+
+}
+
+#checkout:hover{
+    border-radius: 1px;
 }
