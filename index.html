@@ -1,183 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>SHOPIC</title>
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
 
-  <body>
-    <!-- NAV -->
-    <nav class="bg-black" id="nav">
-      <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 bags">
-        <div class="relative flex h-16 items-center justify-between bg-black">
-          <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-            <!-- Mobile menu button -->
-            <button
-              type="button"
-              class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-              aria-controls="mobile-menu"
-              aria-expanded="false"
-            >
-              <span class="sr-only">Open main menu</span>
-              <!-- Icon when menu is closed -->
-              <svg
-                class="block w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                />
-              </svg>
-              <!-- Icon when menu is open -->
-              <svg
-                class="hidden w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6 18L18 6M6 6l12 12"
-                />
-              </svg>
-            </button>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SHOPIC</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- NAV -->
+  <nav class="bg-black" id="nav">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 bags">
+      <div class="relative flex h-16 items-center justify-between bg-black">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button -->
+          <button type="button"
+            class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            aria-controls="mobile-menu" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <!-- Icon when menu is closed -->
+            <svg class="block w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!-- Icon when menu is open -->
+            <svg class="hidden w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex shrink-0 items-center">
+            <h1
+              class="text-7xl rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
+              id="sho">
+              <a href="./index.html"><b>SHO<span class="text-blue" id="pic">PIC</span></b></a>
+            </h1>
           </div>
-          <div
-            class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start"
-          >
-            <div class="flex shrink-0 items-center">
-              <h1
-                class="text-7xl rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                id="sho"
-              >
-                <a href="./index.html"
-                  ><b>SHO<span class="text-blue" id="pic">PIC</span></b></a
-                >
-              </h1>
-            </div>
-            <div class="hidden sm:ml-6 sm:block">
-              <div class="flex space-x-4">
-                <!-- Navigation Links -->
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Navigation Links -->
 
-                <a
-                  href="#main-products"
-                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >Products</a
-                >
-                <a
-                  href="#new-arrival"
-                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >New Arrival</a
-                >
-                <a
-                  href="/unskip.html"
-                  class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white"
-                  >Fashion</a
-                >
+              <a href="#main-products"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
+              <a href="#new-arrival"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">New
+                Arrival</a>
+              <a href="/unskip.html"
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Fashion</a>
 
-                <div class="relative">
-                  <input
-                    type="text"
-                    class="border-b border-grey bg-black text-gray-300 pl-10 pr-3 py-2 focus:outline-none focus:ring-0 placeholder-grey"
-                    placeholder="Search..."
-                  />
+              <div class="relative">
+                <input type="text"
+                  class="border-b border-grey bg-black text-gray-300 pl-10 pr-3 py-2 focus:outline-none focus:ring-0 placeholder-grey"
+                  placeholder="Search..." />
 
-                  <!-- <svg class="absolute top-3 left-3 w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
+                <!-- <svg class="absolute top-3 left-3 w-5 h-5 text-white" fill="none" viewBox="0 0 24 24"
                   stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round"
                      d="M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zM21 21l-5.2-5.2" /> 
                 </svg> -->
-                </div>
               </div>
             </div>
           </div>
-          <div
-            class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0"
-          >
-            <!-- Notification Button -->
-            <button
-              type="button"
-              class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-            >
-              <span class="sr-only">View notifications</span>
-              <svg
-                class="w-6 h-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0"
-                />
-              </svg>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+          <!-- Notification Button -->
+          <button type="button"
+            class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+            <span class="sr-only">View notifications</span>
+            <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+            </svg>
+          </button>
+
+          <div class="relative ml-4">
+            <button type="button"
+              class="relative inline-flex items-center justify-center rounded-full bg-gray-800 p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+              <a href="./cart.html"> <span class="sr-only">View cart</span> </a>
+              <i class="fas fa-shopping-cart text-gray-400 hover:text-white w-6 h-6"></i>
+
+              <span
+                class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 rounded-full"></span>
+              <!-- Cart Item Count -->
             </button>
+          </div>
 
-            <div class="relative ml-4">
-              <button
-                type="button"
-                class="relative inline-flex items-center justify-center rounded-full bg-gray-800 p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-              >
-                <a href="./cart.html"> <span class="sr-only">View cart</span> </a>
-                <i
-                  class="fas fa-shopping-cart text-gray-400 hover:text-white w-6 h-6"
-                ></i>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
-                <span
-                  class="absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 rounded-full"
-                ></span>
-                <!-- Cart Item Count -->
+          <!-- Profile Dropdown -->
+          <div class="relative ml-3">
+            <a href="login.html">
+              <button type="button"
+                class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
+                id="user-menu-button" aria-expanded="false" aria-haspopup="true">
+                <span class="sr-only">Open user menu</span>
+                <img class="w-8 h-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt="Profile" />
               </button>
-            </div>
-
-            <link
-              rel="stylesheet"
-              href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
-            />
-
-            <!-- Profile Dropdown -->
-            <div class="relative ml-3">
-              <a href="login.html">
-                <button
-                  type="button"
-                  class="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
-                  id="user-menu-button"
-                  aria-expanded="false"
-                  aria-haspopup="true"
-                >
-                  <span class="sr-only">Open user menu</span>
-                  <img
-                    class="w-8 h-8 rounded-full"
-                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                    alt="Profile"
-                  />
-                </button>
-              </a>
-            </div>
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
-      <!-- Mobile Menu -->
-      <!-- <div class="sm:hidden" id="mobile-menu">
+    <!-- Mobile Menu -->
+    <!-- <div class="sm:hidden" id="mobile-menu">
       <div class="space-y-1 px-2 pb-3 pt-2">
         Mobile Navigation Links -->
-      <!-- <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
+    <!-- <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
           aria-current="page">Women</a>
         <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
           aria-current="page">Men</a>
@@ -190,30 +126,18 @@
           class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Fashion</a>
       </div>
     </div> -->
-    </nav>
+  </nav>
 
-    <!-- --------------------------------header-------------------------------- -->
+  <!-- --------------------------------header-------------------------------- -->
 
-    <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-60">
-      <video
-        autoplay
-        muted
-        loop
-        class="absolute inset-0 -z-10 w-full h-full object-cover object-right md:object-center"
-      >
-        <source
-          src="./videos/zlUSNqK8RRFMCbEOXTPvEgAa_9.mp4"
-          type="video/mp4"
-        />
-      </video>
+  <div class="relative isolate overflow-hidden bg-gray-900 py-24 sm:py-60">
+    <video autoplay muted loop class="absolute inset-0 -z-10 w-full h-full object-cover object-right md:object-center">
+      <source src="./videos/zlUSNqK8RRFMCbEOXTPvEgAa_9.mp4" type="video/mp4" />
+    </video>
 
-      <div
-        class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
-        aria-hidden="true"
-      >
-        <div
-          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-          style="
+    <div class="hidden sm:absolute sm:-top-10 sm:right-1/2 sm:-z-10 sm:mr-10 sm:block sm:transform-gpu sm:blur-3xl"
+      aria-hidden="true">
+      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="
             clip-path: polygon(
               74.1% 44.1%,
               100% 61.6%,
@@ -232,16 +156,12 @@
               76.1% 97.7%,
               74.1% 44.1%
             );
-          "
-        ></div>
-      </div>
-      <div
-        class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
-        aria-hidden="true"
-      >
-        <div
-          class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20"
-          style="
+          "></div>
+    </div>
+    <div
+      class="absolute -top-52 left-1/2 -z-10 -translate-x-1/2 transform-gpu blur-3xl sm:top-[-28rem] sm:ml-16 sm:translate-x-0 sm:transform-gpu"
+      aria-hidden="true">
+      <div class="aspect-[1097/845] w-[68.5625rem] bg-gradient-to-tr from-[#ff4694] to-[#776fff] opacity-20" style="
             clip-path: polygon(
               74.1% 44.1%,
               100% 61.6%,
@@ -260,219 +180,234 @@
               76.1% 97.7%,
               74.1% 44.1%
             );
-          "
-        ></div>
+          "></div>
+    </div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl lg:mx-0">
+        <h2 class="text-5xl font-semibold tracking-tight text-white sm:text-7xl">
+          Shop with us
+        </h2>
+        <p class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8">
+          SHOPIC offers complementary wrapping on all orders, carefully
+          packaged in the Maison's iconic boxes.
+        </p>
       </div>
-      <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:mx-0">
-          <h2
-            class="text-5xl font-semibold tracking-tight text-white sm:text-7xl"
-          >
-            Shop with us
-          </h2>
-          <p
-            class="mt-8 text-pretty text-lg font-medium text-gray-300 sm:text-xl/8"
-          >
-            SHOPIC offers complementary wrapping on all orders, carefully
-            packaged in the Maison's iconic boxes.
-          </p>
+      <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+        <div
+          class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+          <a href="#">DRESS <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">PERFUME <span aria-hidden="true">&rarr;</span></a>
+          <a href="#">WOMEN BAGS<span aria-hidden="true">&rarr;</span></a>
+          <a href="#">MEN WALLET<span aria-hidden="true"></span></a>
         </div>
-        <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-          <div
-            class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10"
-          >
-            <a href="#">DRESS <span aria-hidden="true">&rarr;</span></a>
-            <a href="#">PERFUME <span aria-hidden="true">&rarr;</span></a>
-            <a href="#">WOMEN BAGS<span aria-hidden="true">&rarr;</span></a>
-            <a href="#">MEN WALLET<span aria-hidden="true"></span></a>
+        <dl class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4">
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">All brand</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">
+              WOMEN
+            </dd>
           </div>
-          <dl
-            class="mt-16 grid grid-cols-1 gap-8 sm:mt-20 sm:grid-cols-2 lg:grid-cols-4"
-          >
-            <div class="flex flex-col-reverse gap-1">
-              <dt class="text-base/7 text-gray-300">All brand</dt>
-              <dd class="text-4xl font-semibold tracking-tight text-white">
-                WOMEN
-              </dd>
-            </div>
-            <div class="flex flex-col-reverse gap-1">
-              <dt class="text-base/7 text-gray-300">All fashion</dt>
-              <dd class="text-4xl font-semibold tracking-tight text-white">
-                MEN
-              </dd>
-            </div>
-            <div class="flex flex-col-reverse gap-1">
-              <dt class="text-base/7 text-gray-300">All color</dt>
-              <dd class="text-4xl font-semibold tracking-tight text-white">
-                BOYS
-              </dd>
-            </div>
-            <div class="flex flex-col-reverse gap-1">
-              <dt class="text-base/7 text-gray-300">All size</dt>
-              <dd class="text-4xl font-semibold tracking-tight text-white">
-                GIRLS
-              </dd>
-            </div>
-          </dl>
-        </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">All fashion</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">
+              MEN
+            </dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">All color</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">
+              BOYS
+            </dd>
+          </div>
+          <div class="flex flex-col-reverse gap-1">
+            <dt class="text-base/7 text-gray-300">All size</dt>
+            <dd class="text-4xl font-semibold tracking-tight text-white">
+              GIRLS
+            </dd>
+          </div>
+        </dl>
       </div>
     </div>
+  </div>
+  <!-- .....................................................new item.................................................... -->
 
-    <!--------------------------------------------------- grid-------------------------------------------------- -->
 
+
+
+  <div class="flex flex-wrap justify-center items-center gap-16 bg-white p-4 max-w-screen-lg mx-auto">
+
+    <div class="h-[450px] w-[350px] flex justify-center items-center rounded-lg shadow-xl  overflow-hidden">
+      <a href="#">
+        <img src="./images/men1.jpg" class="object-cover w-full h-full rounded-lg" alt="Model 1" />
+      </a>
+    </div>
+
+    <div class="h-[450px] w-[350px] flex justify-center items-center rounded-lg shadow-xl  overflow-hidden">
+      <a href="#">
+        <img src="./images/womem1.jpg" class="object-cover w-full h-full rounded-lg" alt="Model 2" />
+      </a>
+    </div>
+
+    <div class="h-[450px] w-[350px] flex justify-center items-center rounded-lg shadow-xl  overflow-hidden">
+      <a href="#">
+        <img src="./images/juniors.jpg" class="object-cover w-full h-full rounded-lg" alt="Model 3" />
+      </a>
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--------------------------------------------------- grid-------------------------------------------------- -->
+
+
+  <div class="flex justify-center items-center min-h-[1200px] bg-gray-900" id="main-products">
     <div
-      class="flex justify-center items-center min-h-screen bg-gray-900"
-      id="main-products"
-    >
-      <div
-        class="grid grid-cols-4 gap-4 gap-2 border-radius-10px justify-center items-center mb-8 absolute sm:grid-cols-1 min-w-xl md:grid-cols-2 lg:grid-cols-4"
-        id="product-grid"
-        style="width: 1200px; height: 1000px"
-      >
-        <div
-          class="h-96 w-60 bg-gray-500 justify-center mt-20 rounded-lg"
-          id="grid"
-        >
-          <a href="#">
-            <img
-              src="./images/model1.jpeg"
-              class="object-cover w-full h-full rounded-lg"
-              alt=""
-          /></a>
-        </div>
-        <div
-          class="h-96 w-60 bg-gray-500 justify-center mt-20 rounded-lg"
-          id="grid"
-        >
-          <a href="#">
-            <img
-              src="./images/model23.png"
-              class="object-cover w-full h-full rounded-lg"
-              alt=""
-          /></a>
-        </div>
-        <div
-          class="h-96 w-60 bg-gray-500 justify-center rounded-lg mt-5"
-          id="grid"
-        >
-          <a href="#"
-            ><img
-              src="./images/model3.jpeg"
-              class="object-cover w-full h-full rounded-lg"
-              alt=""
-          /></a>
-        </div>
-        <div class="h-96 w-60 bg-gray-500 justify-center rounded-lg" id="grid">
-          <a href="#">
-            <img
-              src="./images/model2.jpg"
-              class="object-cover w-full h-full rounded-lg"
-              alt=""
-          /></a>
-        </div>
-        <div
-          class="h-96 w-60 bg-gray-500 justify-center mt-20 rounded-lg"
-          id="grid"
-        >
-          <a href="#"
-            ><img
-              src="./images/perfume.png"
-              class="object-cover w-full h-full rounded-lg"
-              alt=""
-          /></a>
-        </div>
-        <div
-          class="h-96 w-60 bg-gray-500 justify-center mt-20 rounded-lg"
-          id="grid"
-        >
-          <a href="#"
-            ><img
-              src="./images/trendmode.png"
-              class="object-cover w-full h-full rounded-lg"
-              alt=""
-          /></a>
-        </div>
-        <div
-          class="h-96 w-60 bg-gray-500 justify-center rounded-lg mt-5"
-          id="grid"
-        >
-          <a href="#"
-            ><img
-              src="./images/bags.png"
-              class="object-cover w-full h-full rounded-lg"
-              alt=""
-          /></a>
-        </div>
-        <div class="h-96 w-60 bg-gray-500 justify-center rounded-lg" id="grid">
-          <a href="#"
-            ><img
-              src="./images/bagging.png"
-              class="object-cover w-full h-full rounded-lg"
-              alt=""
-          /></a>
+      class="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 justify-center items-center mb-8 max-w-screen-lg"
+      id="product-grid" style="width: 1200px;">
+
+      <!-- Product 1 -->
+      <div class="h-96 w-60 bg-gray-500 rounded-lg overflow-hidden relative" id="grid">
+        <a href="#">
+          <img src="./images/model1.jpeg" class="object-cover w-full h-full rounded-lg" alt="" />
+        </a>
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+          <b>GUCCI</b>
         </div>
       </div>
-    </div>
 
-    <div
-      class="flex justify-center items-center min-h-screen bg-gray-900 sm:hidden md:hidden"
-      id="new-arrival"
-    >
-      <div class="absolute -top-30 -mt-5">
-        <h1 class="text-red-100 text-center text-7xl">
-          <a href="./unskip.html"><u>UNSKIPPABLE</u></a>
-        </h1>
-        <span class="text-gray-400 text-center ml-16"
-          ><i>click here to move the unskippable collections</i></span
-        >
+      <!-- Product 2 -->
+      <div class="h-96 w-60 bg-gray-500 rounded-lg overflow-hidden relative" id="grid">
+        <a href="#">
+          <img src="./images/model23.png" class="object-cover w-full h-full rounded-lg" alt="" />
+        </a>
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+          <b>CHANEL</b>
+        </div>
       </div>
 
-      <!-- <div class="h-96 w-60 justify-center  rounded-lg">
-      <img src="./images/bagging.png" class="object-cover w-full" alt="">
-    </div> -->
-    </div>
-
-    <div class="min-h-screen bg-black text-white">
-      <br /><br />
-
-      <h1 class="text-white text-3xl text-center mb-8">SHOPIC</h1>
-
-      <div
-        class="min-h-screen min-w-screen bg-black text-white flex justify-center space-x-36"
-      >
-        <ol class="space-y-2">
-          <b>NEED HELP</b>
-          <li>order status</li>
-          <li>delivery</li>
-          <li>return</li>
-          <li>order status</li>
-          <li>FAQs</li>
-          <li>shipping policy</li>
-          <li>return and policies</li>
-        </ol>
-        <ol class="space-y-2">
-          <b>ABOUT</b>
-          <li>Adithya Birla Fashion & Retail</li>
-          <li>Find Store</li>
-          <li>Allen Solly Bolgs</li>
-          <li>Terms And Conditions For Membership Programs</li>
-          <li>Bulk Order</li>
-        </ol>
-        <ol class="ml-16 space-y-2">
-          <b>NEED</b>
-          <li>order status</li>
-          <li>delivery</li>
-          <li>return</li>
-          <li>order status</li>
-          <li>FAQs</li>
-          <li>shipping policy</li>
-          <li>return and policies</li>
-        </ol>
+      <!-- Product 3 -->
+      <div class="h-96 w-60 bg-gray-500 rounded-lg overflow-hidden relative" id="grid">
+        <a href="#">
+          <img src="./images/model3.jpeg" class="object-cover w-full h-full rounded-lg" alt="" />
+        </a>
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+          <b>H&M</b>
+        </div>
       </div>
+
+      <!-- Product 4 -->
+      <div class="h-96 w-60 bg-gray-500 rounded-lg overflow-hidden relative" id="grid">
+        <a href="#">
+          <img src="./images/model2.jpg" class="object-cover w-full h-full rounded-lg" alt="" />
+        </a>
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+          <b>ALLEN SOLLY</b>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="h-96 w-60 bg-gray-500 rounded-lg overflow-hidden relative" id="grid">
+        <a href="#">
+          <img src="./images/perfume.png" class="object-cover w-full h-full rounded-lg" alt="" />
+        </a>
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+          <b>DIOR</b>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="h-96 w-60 bg-gray-500 rounded-lg overflow-hidden relative" id="grid">
+        <a href="#">
+          <img src="./images/trendmode.png" class="object-cover w-full h-full rounded-lg" alt="" />
+        </a>
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+          <b>ZARA</b>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="h-96 w-60 bg-gray-500 rounded-lg overflow-hidden relative" id="grid">
+        <a href="#">
+          <img src="./images/bags.png" class="object-cover w-full h-full rounded-lg" alt="" />
+        </a>
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+          <b>LV BAGS</b>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="h-96 w-60 bg-gray-500 rounded-lg overflow-hidden relative" id="grid">
+        <a href="#">
+          <img src="./images/bagging.png" class="object-cover w-full h-full rounded-lg" alt="" />
+        </a>
+        <div class="absolute bottom-0 w-full bg-black bg-opacity-50 text-white text-center py-2">
+          <b>PRADA</b>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="flex justify-center items-center min-h-screen w-full bg-gray-900 bg-cover bg-center relative"
+    id="new-arrival" style="background-image: url('./images/bg-dress.jpg');">
+
+    <div class="absolute inset-0 flex flex-col justify-center items-center text-center">
+      <h1 class="text-red-100 text-7xl">
+        <a href="./unskip.html"><u>UNSKIPPABLE</u></a>
+      </h1>
+      <span class="text-gray-400 text-lg mt-2">
+        <i>Click here to move to the Unskippable Collections</i>
+      </span>
     </div>
 
-    <script src="script.js"></script>
+</div>
 
-    <!-- <script src="tailwind.js"></script> -->
-  </body>
+
+
+  <div class="min-h-screen bg-black text-white">
+    <br /><br />
+
+    <h1 class="text-white text-3xl text-center mb-8">SHOPIC</h1>
+
+    <div class="min-h-screen min-w-screen bg-black text-white flex justify-center space-x-36">
+      <ol class="space-y-2">
+        <b>NEED HELP</b>
+        <li>order status</li>
+        <li>delivery</li>
+        <li>return</li>
+        <li>order status</li>
+        <li>FAQs</li>
+        <li>shipping policy</li>
+        <li>return and policies</li>
+      </ol>
+      <ol class="space-y-2">
+        <b>ABOUT</b>
+        <li>Adithya Birla Fashion & Retail</li>
+        <li>Find Store</li>
+        <li>Allen Solly Bolgs</li>
+        <li>Terms And Conditions For Membership Programs</li>
+        <li>Bulk Order</li>
+      </ol>
+      <ol class="ml-16 space-y-2">
+        <b>NEED</b>
+        <li>order status</li>
+        <li>delivery</li>
+        <li>return</li>
+        <li>order status</li>
+        <li>FAQs</li>
+        <li>shipping policy</li>
+        <li>return and policies</li>
+      </ol>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!-- <script src="tailwind.js"></script> -->
+</body>
+
 </html>

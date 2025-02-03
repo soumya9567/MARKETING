@@ -10,7 +10,12 @@
     transition: 0.2s ease-in-out;
   
 }
+#new-items{
+    width: 450px;
+    height: 480px;
+}
 #mainbtn{
+    height: 1600px;
     background-color: #120442;
     color: white;
 }
