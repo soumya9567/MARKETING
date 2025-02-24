@@ -80,17 +80,21 @@
           </button>
 
           <div class="relative ml-4">
-           <a href="./cart.html"> <button type="button"
-              class="relative inline-flex items-center justify-center rounded-full bg-gray-800 p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
-               <span class="sr-only">View cart</span> 
-              <i class="fas fa-shopping-cart text-gray-400 hover:text-white w-6 h-6"></i>
-
-              <span
-                class=" cart-count absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-xs font-bold leading-none text-red-100 rounded-full"></span>
-              <!-- Cart Item Count -->
-            </button>
-          </a>
-          </div>
+            <a href="./cart.html">
+                <button type="button"
+                    class="relative inline-flex items-center justify-center rounded-full bg-gray-800 p-2 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                    <span class="sr-only">View cart</span>
+                    <i class="fas fa-shopping-cart text-gray-400 hover:text-white w-6 h-6"></i>
+                    
+                    <!-- Cart count badge -->
+                    <span id="cart-count"
+                        class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full hidden">
+                        0
+                    </span>
+                </button>
+            </a>
+        </div>
+        
 
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
 
@@ -141,7 +145,7 @@
             <div class="p-4 bg-blue-700">
                 <span class="font-bold block text-lg">BLUE MEN LV SHIRT</span>
                 <p class="text-black-700">PRICE: ₹<span class="price-display font-medium">7000</span></p>
-                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
+                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full ml-10 bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
                     data-name="BLUE MEN LV SHIRT" data-image="./images/model1.jpeg" data-price="7000">
                     ADD TO CART
                 </button>
@@ -155,7 +159,7 @@
             <div class="p-4 bg-blue-700">
                 <span class="font-bold block text-lg">RED WOMEN GUCCI TOP</span>
                 <p class="text-black-700">PRICE: ₹<span class="price-display font-medium">2000</span></p>
-                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
+                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full ml-10 bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
                     data-name="RED WOMEN GUCCI TOP" data-image="./images/model23.png" data-price="2000">
                     ADD TO CART
                 </button>
@@ -169,7 +173,7 @@
             <div class="p-4 bg-blue-700">
                 <span class="font-bold block text-lg">WHITE CHANEL SHIRT</span>
                 <p class="text-black-700">PRICE: ₹<span class="price-display font-medium">8000</span></p>
-                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
+                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 ml-10 text-white add-to-cart-btn hover:bg-blue-600" 
                     data-name="WHITE CHANEL SHIRT" data-image="./images/model3.jpeg" data-price="8000">
                     ADD TO CART
                 </button>
@@ -183,7 +187,7 @@
             <div class="p-4 bg-blue-700">
                 <span class="font-bold block text-lg">YELLOW WOMEN SHIRT</span>
                 <p class="text-black-700">PRICE: ₹<span class="price-display font-medium">2500</span></p>
-                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
+                <button type="button" class="mt-5 border-gray-300 w-40 h-12 ml-12 rounded-full ml-10 bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
                     data-name="YELLOW WOMEN SHIRT" data-image="./images/model2.jpg" data-price="2500">
                     ADD TO CART
                 </button>
@@ -197,7 +201,7 @@
             <div class="p-4 bg-blue-700">
                 <span class="font-bold block text-lg">BRUTE PERFUME</span>
                 <p class="text-black-700">PRICE: ₹<span class="price-display font-medium">12000</span></p>
-                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
+                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full ml-10 bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
                     data-name="BRUTE PERFUME" data-image="./images/perfume.png" data-price="12000">
                     ADD TO CART
                 </button>
@@ -211,7 +215,7 @@
             <div class="p-4 bg-blue-700">
                 <span class="font-bold block text-lg">MEN GREY SHIRT</span>
                 <p class="text-black-700">PRICE: ₹<span class="price-display font-medium">9000</span></p>
-                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
+                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 ml-10 text-white add-to-cart-btn hover:bg-blue-600" 
                     data-name="MEN GREY SHIRT" data-image="./images/trendmode.png" data-price="9000">
                     ADD TO CART
                 </button>
@@ -225,7 +229,7 @@
             <div class="p-4 bg-blue-700">
                 <span class="font-bold block text-lg">NEW FASHION LV</span>
                 <p class="text-black-700">PRICE: ₹<span class="price-display font-medium">90000</span></p>
-                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
+                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 ml-10 text-white add-to-cart-btn hover:bg-blue-600" 
                     data-name="NEW FASHION LV" data-image="./images/bags.png" data-price="90000">
                     ADD TO CART
                 </button>
@@ -239,7 +243,7 @@
             <div class="p-4 bg-blue-700">
                 <span class="font-bold block text-lg">NEW FASHION CHANEL</span>
                 <p class="text-black-700">PRICE: ₹<span class="price-display font-medium">90000</span></p>
-                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 text-white add-to-cart-btn hover:bg-blue-600" 
+                <button type="button" class="mt-5 border-gray-300 w-40 h-12 rounded-full bg-blue-500 ml-10 text-white add-to-cart-btn hover:bg-blue-600" 
                     data-name="NEW FASHION CHANEL" data-image="./images/bagging.png" data-price="90000">
                     ADD TO CART
                 </button>
@@ -250,36 +254,67 @@
 </div>
 
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        function updateCartCount() {
-            const cart = JSON.parse(localStorage.getItem("cart")) || [];
-            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
-            console.log(`Cart updated: ${totalItems} items`);
-        }
-        
-        document.addEventListener("click", (event) => {
-            if (event.target.classList.contains("add-to-cart-btn")) {
-                const button = event.target;
-                const name = button.getAttribute("data-name");
-                const image = button.getAttribute("data-image");
-                const price = parseInt(button.getAttribute("data-price"), 10);
-                
-                let cart = JSON.parse(localStorage.getItem("cart")) || [];
-                let existingProduct = cart.find((item) => item.name === name);
-                
-                if (existingProduct) {
-                    existingProduct.quantity += 1;
-                } else {
-                    cart.push({ name, image, price, quantity: 1 });
-                }
-                
-                localStorage.setItem("cart", JSON.stringify(cart));
-                updateCartCount();
-                alert(`${name} has been added to your cart!`);
-            }
-        });
-    });
+  document.addEventListener("DOMContentLoaded", () => {
+    function updateCartCount() {
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+
+    if (cartCountElement) {
+      cartCountElement.textContent = totalItems > 0 ? totalItems : "";
+      cartCountElement.classList.toggle("hidden", totalItems === 0);
+    }
+
+    if (checkoutButton) {
+      if (cart.length === 0) {
+        checkoutButton.disabled = true;
+        checkoutButton.classList.add("opacity-50", "cursor-not-allowed");
+      } else {
+        checkoutButton.disabled = false;
+        checkoutButton.classList.remove("opacity-50", "cursor-not-allowed");
+      }
+    }
+  }
+
+  updateCartCount();
+       // Ensure cart count updates on page load
+  });
+
+  document.addEventListener("click", (event) => {
+      if (event.target.classList.contains("add-to-cart-btn")) {
+          const button = event.target;
+          const name = button.getAttribute("data-name");
+          const image = button.getAttribute("data-image");
+          const price = parseInt(button.getAttribute("data-price"), 10);
+          
+          let cart = JSON.parse(localStorage.getItem("cart")) || [];
+          let existingProduct = cart.find((item) => item.name === name);
+          
+          if (existingProduct) {
+              existingProduct.quantity += 1; // Increase quantity if item already exists
+          } else {
+              cart.push({ name, image, price, quantity: 1 }); // Add new item if not in cart
+          }
+          
+          localStorage.setItem("cart", JSON.stringify(cart));
+          updateCartCount(); // Update cart count **before** triggering alert
+          setTimeout(() => {
+              alert(`${name} has been added to your cart!`);
+          }, 100); // Slight delay to ensure UI updates before alert
+      }
+  });
+
+  function updateCartCount() {
+      let cart = JSON.parse(localStorage.getItem("cart")) || [];
+      let totalItems = cart.reduce((acc, item) => acc + item.quantity, 0); // Sum of all item quantities
+      
+      let cartCountElement = document.querySelector("#cart-count"); // Ensure the element exists
+      if (cartCountElement) {
+          cartCountElement.textContent = totalItems;
+          cartCountElement.style.display = totalItems > 0 ? "block" : "none"; // Hide if empty
+      }
+  }
 </script>
+
 
 
   <br><br><br><br>
