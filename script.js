@@ -37,32 +37,31 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Event delegation for add-to-cart button
-  document.addEventListener("click", (event) => {
-    if (event.target.classList.contains("add-to-cart-btn")) {
-      const button = event.target;
-      const name = button.getAttribute("data-name");
-      const image = button.getAttribute("data-image");
-      const price = parseInt(button.getAttribute("data-price"), 10);
+  // document.addEventListener("click", (event) => {
+  //   if (event.target.classList.contains("add-to-cart-btn")) {
+  //     const button = event.target;
+  //     const name = button.getAttribute("data-name");
+  //     const image = button.getAttribute("data-image");
+  //     const price = parseInt(button.getAttribute("data-price"), 10);
 
-      let cart = JSON.parse(localStorage.getItem("cart")) || [];
-      let existingProduct = cart.find((item) => item.name === name);
+  //     let cart = JSON.parse(localStorage.getItem("cart")) || [];
+  //     let existingProduct = cart.find((item) => item.name === name);
 
-      if (existingProduct) {
-        existingProduct.quantity += 1;
-      } else {
-        cart.push({ name, image, price, quantity: 1 });
-      }
+  //     if (existingProduct) {
+  //       existingProduct.quantity += 1;
+  //     } else {
+  //       cart.push({ name, image, price, quantity: 1 });
+  //     }
 
-      localStorage.setItem("cart", JSON.stringify(cart));
-      updateCartCount();
-      alert(`${name} has been added to your cart!`);
-    }
-  });
+  //     localStorage.setItem("cart", JSON.stringify(cart));
+  //     updateCartCount();
+  //     alert(`${name} has been added to your cart!`);
+  //   }
+  // });
 
-  // Function to render the cart dynamically
   function renderCart() {
     const cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cartContainer.innerHTML = ""; // Clear existing content
+    cartContainer.innerHTML = ""; 
 
     if (cart.length === 0) {
       cartContainer.innerHTML = `<p class="text-center text-gray-500 text-lg">Your cart is empty.</p>`;
